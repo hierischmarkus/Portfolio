@@ -1,0 +1,528 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: white;
+    color: black;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/art.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 10px 5%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: flex;
+}
+
+
+.logo{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.logo span{
+    color: rgba(97,176,183,1)
+}
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #61B0B7;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.1s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 70vh;
+    font-size: 30px;
+}
+
+.header-text h1{
+    color: white;
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span{
+    color:#61B0B7;
+}
+
+.header-text p{
+    color: white;
+}
+
+
+/*about*/
+
+
+#about{
+    padding: 80px 0;
+    color: black;
+}
+
+.aboutcontainer{
+    padding: 10px 10%;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 45%;
+}
+
+.about-col-1 img{
+    width: 90%;
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 35%;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.about-col-2 p{
+    text-align: justify;
+}
+
+
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #61B0B7;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color:rgba(97,176,183,0.8);
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;   
+}
+
+.tab-contents p{
+    font-size: 14px;
+}
+
+/* Container for skill bars */
+  
+  .skills {
+    text-align: right; /* Right-align text */
+    padding-top: 7px; /* Add top padding */
+    padding-bottom: 7px; /* Add bottom padding */
+    color: white; /* White text color */
+    margin-bottom: 10px;
+    margin-top: 2px;
+    background-color: rgba(97,176,183,0.8);
+    border-radius: 3px;
+  }
+  
+  .vvvv {width: 75%;} 
+  .unity {width: 60%;} 
+  .arduino {width: 55%;} 
+  .python {width: 50%;} 
+  .adobe {width: 40%;}
+
+
+/*-----portfolio---------*/
+
+#portfolio{
+    padding: 50px 0;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: 0.5s;
+}
+
+.layer{
+    color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    align-items: center;
+    padding: 20px 40px;
+    font-size: 14px;
+    transition: 0.5s;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.work:hover .layer{
+    background: rgba(97,176,183,0.8);
+    color:white;
+}
+
+
+/* -----------contact---------- */
+
+
+.contactcontainer {
+    margin-top: 100px;
+    background: rgba(97,176,183,1);
+    color: white;
+}
+
+.contactcontainer .sub-title{
+    color: white;
+    font-size: 45px;
+}
+
+.row{
+    padding: 10px 5%;
+    padding-top: 30px;
+}
+
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.email {
+    display: flex;
+}
+
+
+.contact-left p{
+    margin-top: 10px;
+}
+
+
+.email-icon {
+    filter: invert(100%);
+    margin-top: 5px;
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: inline-block;
+    background: white;
+    color: rgba(97,176,183,1);
+    border-radius: 4px;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: white;
+    padding: 15px;
+    margin: 15px 0;
+    color: rgba(97,176,183,1);
+    font-size: 18px;
+    border: 6px;
+}
+
+form .btn{
+    border: none;
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+/*beide Buttons*/
+
+.menu-icon{
+    filter: invert(100%);
+    display: none;
+}
+
+
+/*----------css für zwischendrin---------------------*/
+@media only screen and (max-width: 1100px) and (min-width: 900px)  {
+    .aboutcontainer{
+        padding: 10px 0%;
+    }
+
+}
+
+
+/*----------css für zwischendrin---------------------*/
+@media only screen and (max-width: 900px) and (min-width: 600px)  {
+
+
+    .header-text{
+        font-size: 26px;
+    }
+
+    .header-text h1{
+        font-size: 45px;
+    }
+
+    
+    nav ul li{
+        margin: 10px 12px;
+    }
+
+    nav ul li a{
+        font-size: 17px;
+    }
+
+    .sub-title{
+        font-size: 45px;
+    }
+
+
+    .aboutcontainer{
+        padding: 10px 25%;
+    }
+
+    .about-col-1 {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+
+    .about-col-2{
+        flex-basis: 100%;
+    }
+
+    .about-col-1 img{
+        width: 400px;
+    }
+
+
+    .contact-left{
+        flex-basis: 100%;
+    }
+
+    .contact-right{
+        flex-basis: 100%;
+    }
+
+}
+
+
+/*-----------css for phones-------------- */
+@media only screen and (max-width: 600px){
+
+    .container{
+        padding: 0px 5%;
+    }
+    
+    #header{
+        padding-top: 10px;
+        background-image: url(images/art_phone.png);
+    }
+
+    .header-text{
+        font-size: 16px;
+    }
+
+    .header-text h1{
+        font-size: 30px;
+    }
+
+    nav .menu-icon{
+        display: block;
+        width: 25px;
+        height: 25px;
+        left: 0;
+        z-index: 0;
+    }
+
+    
+    nav ul{
+        background: rgba(97,176,183,1);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 100px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 20px;
+    }
+
+    nav ul li a{
+        font-size: 15px;
+    }
+
+    nav ul .menu-icon {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        cursor: pointer;   
+    }
+
+    .sub-title{
+        font-size: 30px;
+    }
+    
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+
+    .about-col-1 img{
+        width: 100%;
+    }
+
+    .about-col-2{
+        font-size: 14px;
+    }
+
+
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+
+
+    .layer{
+        color:white;
+        justify-content: flex-end;
+    }
+
+
+    
+    .contact-left{
+        flex-basis: 100%;
+    }
+
+    .contact-right{
+        flex-basis: 100%;
+    }
+
+
+
+}

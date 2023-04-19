@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo"><span>MH</span>Dev</div>
+                <ul id = "sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <img src="svg/circle-xmark-regular.svg" class="menu-icon" onclick="closemenu()" alt=""/>
+                </ul>
+                <img src="svg/bars-solid.svg" class="menu-icon" onclick="openmenu()" alt="">
+            </nav>
+            <div class="header-text">
+                <h1><span>Markus</span> Hirsch</h1>
+                <p>Interaction Developer</p>
+            </div>
+        </div>
+    </div>
+
+
+<!---------about--> 
+    <div id="about">
+        <div class="aboutcontainer">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a creative developer. During my studies in Stuttgart and Hagenberg,
+                        my internship and my work I realized many different projects from different areas. I made interactive 
+                        installations, games, physical prototypes, Webapplications and more, scroll down and check out 
+                        some of them in the work section. 
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <p>VVVV</p>
+                            <div class="skillcontainer">
+                              <div class="skills vvvv"></div>
+                            </div>
+                            
+                            <p>UNITY/C#</p>
+                            <div class="skillcontainer">
+                              <div class="skills unity"></div>
+                            </div>
+                            
+                            <p>Arduino/Physical Prototyping</p>
+                            <div class="skillcontainer">
+                              <div class="skills arduino"></div>
+                            </div>
+
+                            <p>Python, JavaScript</p>
+                            <div class="skillcontainer">
+                              <div class="skills python"></div>
+                            </div>
+
+                            <p>AdobeCC</p>
+                            <div class="skillcontainer">
+                              <div class="skills adobe"></div>
+                            </div>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2017-2018</span><br>Internship Creative Technolgoist at 17k <br> - Developing Interactive Applications</li>
+                            <li><span>2020-2022</span><br>Interaction Developer at Responsive Spaces <br> - Developing Interactive Applications <br> - Planing and Implementing Software Projects <br> - Rapid Prototyping for Creative Design Ideas</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016-2020</span><br>Bachelor Program Audiovisual Media <br> Hochschule der Medien Stuttgart <br> Degree: Bachelor of Engineering</li>
+                            <li><span>2020-2022</span><br>Master's Program Interactive Media <br> University of Applied Sciences Upper Austria <br> Degree: Master of Science in Engineering</li>
+                        </ul>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    
+    <!--portfolio-->
+    <div id ="Portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h2>Social Media App</h2>
+                        <p>Game</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h2>Music App</h2>
+                        <p>Interactive Installation</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h2>Online Shit</h2>
+                        <p>Prototyp</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h2>Online Shit</h2>
+                        <p>Prototyp</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h2>Online Shit</h2>
+                        <p>Prototyp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------contact-------------->
+    <div id="contact">
+        <div class="contactcontainer">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <div class="email">
+                        <img src="svg/envelope-regular.svg" class="email-icon" alt="">
+                        <p id="emailtext">contact@example.com</p>
+                    </div> 
+                    <a href="images/my-cv.pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type ="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<script>
+
+    // tabs für lebenslauf
+    var tablinks = document.getElementsByClassName('tab-links')
+    var tabcontents = document.getElementsByClassName('tab-contents')
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add('active-tab');
+    }
+
+    //sidemenu
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+
+
+</script>
+
+</html>
