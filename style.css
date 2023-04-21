@@ -213,10 +213,14 @@ nav ul li a:hover::after{
     padding: 50px 0;
 }
 
+.portfoliocontainer{
+    padding: 0px 12%;
+}
+
 .work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap: 40px;
+    grid-gap: 100px;
     margin-top: 50px;
 }
 
@@ -365,6 +369,10 @@ form .btn{
         padding: 10px 0%;
     }
 
+    .portfoliocontainer{
+        padding: 0px 5%;
+    }
+
 }
 
 
@@ -409,6 +417,15 @@ form .btn{
 
     .about-col-1 img{
         width: 400px;
+    }
+
+    .portfoliocontainer{
+        padding: 0px 5%;
+    }
+
+    .work-list{
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        grid-gap: 50px;
     }
 
 
