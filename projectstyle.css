@@ -5,6 +5,11 @@
     margin-top: 40px;
 }
 
+.project-container .sub-title{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
 
 .project-content{
     display: flex;
@@ -17,8 +22,8 @@
 }
 
 .project-row2{
-    margin-top: 120px;
-    flex-basis: 52%;
+    margin: 10px 0;
+    flex-basis: 60%;
     margin-left: 30px;
 }
 
@@ -28,7 +33,33 @@
 
 .project-slideshow{
     margin: 50px 0;
-    width: 99%;
+    position: relative;
+}
+
+.slide{
+    display: none;
+}
+
+.project-slideshow .slide{
+    width: 100%;
+    height: auto;
+}
+
+.project-slideshow .slide-button{
+    margin: 0 7px;
+    top: 50%; 
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    filter: invert(100%);
+}
+
+.project-slideshow .slide-button:hover{
+    transform: scale(1.1);
+}
+
+.project-slideshow .slide-button.right{
+    right: 1%;
 }
 
 
@@ -45,6 +76,66 @@
 
 .project-content ul li span{
     color:rgba(97,176,183,0.8);
-    font-size: 14px;
+    font-size: 16px;
 }
 
+.project-content p{
+    text-align: justify;
+}
+
+.next-project{
+    display: flex;
+    float: right;
+    margin-top: 5px;
+}
+
+.next-project p{
+    font-size: 22px;
+}
+
+.next-project-container{
+    margin-left: 5px;
+    display: inline-block;
+    height: 100%;
+}
+
+.next-project-button{
+    height: 18px;
+    width: 18px;
+    vertical-align: bottom;
+}
+
+
+
+/*----------css für zwischendrin---------------------*/
+@media only screen and (max-width: 900px)  {
+
+    .project-row1{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+
+    .project-row2{
+        flex-basis: 100%;
+        margin-left: 0px;
+    }
+
+    .next-project p{
+        font-size: 20px;
+    }
+
+    .next-project-button{
+        height: 16px;
+        width: 16px;
+    }
+
+    .next-project p{
+        font-size: 18px;
+    }
+
+    .next-project-button{
+        height: 16px;
+        width: 16px;
+    }
+
+}

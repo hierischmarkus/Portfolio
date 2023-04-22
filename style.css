@@ -12,7 +12,9 @@ html{
 body{
     background-color: white;
     color: black;
+    font-size: 18px;
 }
+
 
 #header{
     width: 100%;
@@ -54,7 +56,6 @@ nav ul li{
 nav ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
     position: relative;
 }
 
@@ -102,7 +103,7 @@ nav ul li a:hover::after{
 }
 
 .aboutcontainer{
-    padding: 10px 10%;
+    padding: 10px 9%;
 }
 
 .row{
@@ -112,7 +113,7 @@ nav ul li a:hover::after{
 }
 
 .about-col-1{
-    flex-basis: 45%;
+    flex-basis: 46%;
 }
 
 .about-col-1 img{
@@ -121,7 +122,7 @@ nav ul li a:hover::after{
 }
 
 .about-col-2{
-    flex-basis: 35%;
+    flex-basis: 38%;
 }
 
 .sub-title{
@@ -139,15 +140,15 @@ nav ul li a:hover::after{
 
 .tab-titles{
     display: flex;
-    margin: 20px 0 40px;
+    margin: 20px 0 35px;
 }
 
 .tab-links{
     margin-right: 50px;
-    font-size: 18px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    font-size: 20px;
 }
 
 .tab-links::after{
@@ -172,7 +173,7 @@ nav ul li a:hover::after{
 
 .tab-contents ul li span{
     color:rgba(97,176,183,0.8);
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .tab-contents{
@@ -183,9 +184,6 @@ nav ul li a:hover::after{
     display: block;   
 }
 
-.tab-contents p{
-    font-size: 14px;
-}
 
 /* Container for skill bars */
   
@@ -253,13 +251,12 @@ nav ul li a:hover::after{
     padding: 0 40px;
     align-items: center;
     padding: 20px 40px;
-    font-size: 14px;
     transition: 0.5s;
 }
 
-.layer h3{
-    font-weight: 500;
-    margin-bottom: 30px;
+.layer h2{
+    font-weight: 600;
+    margin-bottom: 2px;
 }
 
 .work:hover img{
@@ -349,7 +346,6 @@ form input, form textarea{
 form .btn{
     border: none;
     padding: 14px 60px;
-    font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
 }
@@ -364,13 +360,34 @@ form .btn{
 
 
 /*----------css für zwischendrin---------------------*/
-@media only screen and (max-width: 1100px) and (min-width: 900px)  {
+@media only screen and (max-width: 1150px) and (min-width: 900px)  {
+    
+    body{
+        font-size: 17px;
+    }
+
     .aboutcontainer{
         padding: 10px 0%;
     }
 
     .portfoliocontainer{
-        padding: 0px 5%;
+        padding: 0px 9%;
+    }
+
+    .work-list{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .tab-titles{
+        margin: 20px 0 25px;
+    }
+
+    .tab-links{
+        font-size: 19px;
+    }
+
+    .tab-contents ul li span{
+        font-size: 15px;
     }
 
 }
@@ -378,6 +395,10 @@ form .btn{
 
 /*----------css für zwischendrin---------------------*/
 @media only screen and (max-width: 900px) and (min-width: 600px)  {
+
+    body{
+        font-size: 16px;
+    }
 
 
     .header-text{
@@ -393,9 +414,6 @@ form .btn{
         margin: 10px 12px;
     }
 
-    nav ul li a{
-        font-size: 17px;
-    }
 
     .sub-title{
         font-size: 45px;
@@ -415,12 +433,25 @@ form .btn{
         flex-basis: 100%;
     }
 
+    .tab-titles{
+        margin: 20px 0 30px;
+    }
+
+    .tab-links{
+        font-size: 18px;
+    }
+
+
+    .tab-contents ul li span{
+        font-size: 14px;
+    }
+
     .about-col-1 img{
         width: 400px;
     }
 
     .portfoliocontainer{
-        padding: 0px 5%;
+        padding: 0px 8%;
     }
 
     .work-list{
@@ -442,6 +473,10 @@ form .btn{
 
 /*-----------css for phones-------------- */
 @media only screen and (max-width: 600px){
+
+    body{
+        font-size: 15px;
+    }
 
     .container{
         padding: 0px 5%;
@@ -486,10 +521,6 @@ form .btn{
         margin: 20px;
     }
 
-    nav ul li a{
-        font-size: 15px;
-    }
-
     nav ul .menu-icon {
         position: absolute;
         top: 20px;
@@ -508,13 +539,18 @@ form .btn{
     .about-col-1{
         margin-bottom: 30px;
     }
+    
 
     .about-col-1 img{
         width: 100%;
     }
 
-    .about-col-2{
-        font-size: 14px;
+    .tab-contents ul li span{
+        font-size: 13px;
+    }
+
+    .tab-titles{
+        margin: 20px 0 28px;
     }
 
 

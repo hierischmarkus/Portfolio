@@ -14,7 +14,10 @@
             <nav>
                 <div class="logo"><span>MH</span>Dev</div>
                 <ul id = "sidemenu">
-                    <li><a href="">Home</a></li>
+                    <li><a href="index.html#header">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#Portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
                     <img src="svg/circle-xmark-regular.svg" class="menu-icon" onclick="closemenu()" alt=""/>
                 </ul>
                 <img src="svg/bars-solid.svg" class="menu-icon" onclick="openmenu()" alt="">
@@ -23,9 +26,9 @@
     </div>
     <div id = "project">
         <div class="project-container">
+            <h1 class="sub-title">Projectname</h1>
             <div class="project-content">
                 <div class="project-row1">
-                    <h1 class="sub-title">Projectname</h1>
                     <ul>
                         <li><span>Institution</span><br>FHOOE</li>
                         <li><span>Year</span><br>2020</li>
@@ -55,12 +58,70 @@
                             facilisis at vero eros et accumsan et iusto odio dignissim qui 
                             blandit praesent luptatum zzril delenit augue duis dolore te 
                             feugait nulla facilisi. Lorem ipsum dolor sit amet</p>
-                        <img src="images/hi-hupfer.png" alt="" class="project-slideshow">
+                        <div class="project-slideshow">
+                            <img class="slide" src="images/hi-hupfer1.png" alt="" style="width: 99%;">
+                            <img class="slide" src="images/hi-hupfer2.png" alt="" style="width: 99%;">
+                            <img class="slide" src="images/hi-hupfer3.png" alt="" style="width: 99%;">
+                            <img class="slide" src="images/hi-hupfer4.png" alt="" style="width: 99%;">
+                            <img src="svg/chevron-left.svg"  onclick="plusDivs(-1)" class="slide-button left" alt="">
+                            <img src="svg/chevron-right.svg" onclick="plusDivs(1)" class="slide-button right" alt="">
+                        </div>
+                        <div class="next-project">
+                            <p>Next Project</p>
+                            <div class="next-project-container">
+                                <img src="svg/chevron-right.svg" class="next-project-button" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!----------contact-------------->
+        <div id="contact">
+            <div class="contactcontainer">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <div class="email">
+                            <img src="svg/envelope-regular.svg" class="email-icon" alt="">
+                            <p id="emailtext">contact@example.com</p>
+                        </div> 
+                        <a href="images/my-cv.pdf" download class="btn">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type ="submit" class="btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
     </div>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("slide");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+    </script>
     
 </body>
 </html>
