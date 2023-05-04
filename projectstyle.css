@@ -46,11 +46,11 @@
 }
 
 .project-slideshow .slide-button{
-    margin: -20px 7px;
+    margin: -21px 7px;
     top: 50%;
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
     filter: invert(100%);
     cursor: pointer;
 }
@@ -60,8 +60,19 @@
     right: 0%;
 }
 
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.0s;
+  }
+  
+  @keyframes fade {
+    from {opacity: 0.8} 
+    to {opacity: 1}
+}
+
 .dot-container{
-    top: 92%; 
+    bottom: 2%; 
     position: absolute;
     width: 100%;
     display: flex;
@@ -71,8 +82,8 @@
 .dot {
     margin: 0 5px;
     cursor: pointer;
-    height: 18px;
-    width: 18px;
+    height: 12px;
+    width: 12px;
     background-color: rgba(97,176,183,0.6);
     border-radius: 50%;
     display: inline-block;
@@ -109,11 +120,10 @@
     display: flex;
     float: right;
     margin-top: 5px;
+    cursor: pointer;
+    vertical-align: baseline;
 }
 
-.next-project p{
-    font-size: 22px;
-}
 
 .next-project-container{
     margin-left: 5px;
@@ -122,9 +132,13 @@
 }
 
 .next-project-button{
-    height: 18px;
-    width: 18px;
-    vertical-align: bottom;
+    height: 16px;
+    width: 16px;
+}
+
+.next-project p{
+    line-height: 16px;
+    vertical-align: middle;
 }
 
 
@@ -143,22 +157,44 @@
         margin-left: 0px;
     }
 
-    .next-project p{
-        font-size: 20px;
-    }
 
     .next-project-button{
         height: 16px;
         width: 16px;
     }
 
-    .next-project p{
-        font-size: 18px;
-    }
 
     .next-project-button{
         height: 16px;
         width: 16px;
+    }
+
+    .project-slideshow .slide-button{
+        margin: -18px 7px;
+        width: 36px;
+        height: 36px;
+    }
+    
+
+}
+
+@media only screen and (max-width: 600px)  {
+
+    .dot{
+        width: 10px;
+        height: 10px;
+        margin: 0 4px;
+    }
+
+    .next-project-button{
+        height: 14px;
+        width: 14px;
+    }
+
+    .project-slideshow .slide-button{
+        margin: -15px 7px;
+        width: 30px;
+        height: 30px;
     }
 
 }
