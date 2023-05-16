@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projectstyle.css">
+</head>
+<body>
+    <div class="header" style="background-image: url(projects/weihnachtspost/vorschau.jpg);">
+        <div class="container">
+            <nav>
+                <a class="logo" href="index.html#header"><span>MH</span>Dev</a>
+                <ul id = "sidemenu">
+                    <li><a href="index.html#header">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#Portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <img src="svg/close.svg" class="menu-icon" onclick="closemenu()" alt=""/>
+                </ul>
+                <img src="svg/menu.svg" class="menu-icon" onclick="openmenu()" alt="">
+            </nav>
+        </div>
+    </div>
+    <div id = "project">
+        <div class="project-container">
+            <h1 class="sub-title">Christmas Post</h1>
+            <div class="project-content">
+                <div class="project-row1">
+                    <ul>
+                        <li><span>Institution</span><br>17K GmbH</li>
+                        <li><span>Year</span><br>2018</li>
+                        <li><span>Type</span><br>Generative Design</li>
+                        <li><span>Software</span><br>VVVV</li>
+                        <li><span>My Part</span><br>Prototyping<br>Implementation</li>
+                    </ul>
+                </div>
+                <div class="project-row2">
+                    <div class="project-row2-container">
+                        </div>
+                        <video controls id="video">
+                            <source src="projects/weihnachtspost/video.mp4" type="video/mp4">
+                        </video>
+                        <p> During my internship at 17k, my fellow interns and I had the task of 
+                            designing and implementing personalized Christmas cards for our 
+                            business partners. Our approach was to analyze the 
+                            email traffic between our company and the recipients to create a 
+                            unique generative design concept.
+                            <br><br>
+                            The design featured lines representing incoming and outgoing emails, 
+                            forming a Christmas tree. The number of branches on the tree correlated 
+                            with the volume of emails, creating a visually engaging representation. 
+                            The cards showcased email traffic from January to November, with months 
+                            arranged like a calendar for easy reference.
+                            <br><br>
+                            My primary focus during this project was on the technical implementation. 
+                            I developed a script to convert email data into readable JSON files, 
+                            which served as the basis for the generative design. Additionally, 
+                            I created an application to control the draw plotter, a device 
+                            used to bring our designs to life on the physical cards.
+
+
+                            </p>
+                            <div class="project-slideshow">
+                                <img class="slide fade" src="projects/weihnachtspost/1.jpg" alt="" style="width: 100%;">
+                                <img class="slide fade" src="projects/weihnachtspost/2.jpg" alt="" style="width: 100%;">
+                                <img class="slide fade" src="projects/weihnachtspost/3.jpg" alt="" style="width: 100%;">
+                                <img src="svg/chevron-left.svg"  onclick="plusSlides(-1)" class="slide-button left" alt="">
+                                <img src="svg/chevron-right.svg" onclick="plusSlides(1)" class="slide-button right" alt="">
+                                <div class="dot-container">
+                                    <span class="dot" onclick="showspecificSlide(1)"></span> 
+                                    <span class="dot" onclick="showspecificSlide(2)"></span> 
+                                    <span class="dot" onclick="showspecificSlide(3)"></span>
+                                </div>  
+                            </div>
+                        <div class="change-project-wrapper">
+                            <a class="change-project" href="mediawall.html">
+                                <div class="change-project-container last">
+                                    <img src="svg/chevron-left.svg" class="change-project-button" alt="">
+                                </div>
+                                <p>Last Project</p>
+                            </a> 
+                            <a class="change-project" href="synesthesia.html">
+                                <p>Next Project</p>
+                                <div class="change-project-container next">
+                                    <img src="svg/chevron-right.svg" class="change-project-button" alt="">
+                                </div>
+                            </a> 
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------contact-------------->
+        <div id="contact">
+            <div class="contactcontainer">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <div class="email">
+                            <img src="svg/email.svg" class="email-icon" alt="">
+                            <p id="emailtext">contact@example.com</p>
+                        </div> 
+                        <a href="images/my-cv.pdf" download class="btn">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type ="submit" class="btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+    <script src="slideshow.js"></script>
+    <script src="changetabs.js"></script>
+
+</body>
+</html>

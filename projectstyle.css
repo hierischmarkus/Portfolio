@@ -1,8 +1,10 @@
 
+
 .project-container{
     padding: 10px 10%;
     margin-top: 40px;
 }
+
 
 .project-container .sub-title{
     margin-top: 10px;
@@ -28,6 +30,22 @@
 
 .project-row2-container{
     width: 100%;
+}
+
+
+
+
+#video {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+video::-webkit-media-controls {
+    visibility: hidden;
+}
+
+video::-webkit-media-controls-enclosure {
+    visibility: visible;
 }
 
 .project-slideshow{
@@ -116,7 +134,14 @@
     text-align: justify;
 }
 
-.next-project{
+.change-project-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.change-project{
+    text-decoration: none;
+    color: black; 
     display: flex;
     float: right;
     margin-top: 5px;
@@ -125,18 +150,26 @@
 }
 
 
-.next-project-container{
-    margin-left: 5px;
+
+.change-project-container{
     display: inline-block;
     height: 100%;
 }
 
-.next-project-button{
+.change-project-container.next{
+    margin-left: 5px;
+}
+
+.change-project-container.last{
+    margin-right: 5px;
+}
+
+.change-project-button{
     height: 16px;
     width: 16px;
 }
 
-.next-project p{
+.change-project p{
     line-height: 16px;
     vertical-align: middle;
 }
@@ -158,13 +191,13 @@
     }
 
 
-    .next-project-button{
+    .change-project-button{
         height: 16px;
         width: 16px;
     }
 
 
-    .next-project-button{
+    .change-project-button{
         height: 16px;
         width: 16px;
     }
@@ -186,7 +219,7 @@
         margin: 0 4px;
     }
 
-    .next-project-button{
+    .change-project-button{
         height: 14px;
         width: 14px;
     }

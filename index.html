@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="header" style="background-image: url(images/art.png);">
+    <div class="header" id="main-header">
         <div class="container">
             <nav>
-                <div class="logo"><span>MH</span>Dev</div>
+                <a class="logo" href="#header"><span>MH</span>Dev</a>
                 <ul id = "sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -22,7 +22,7 @@
                 <img src="svg/menu.svg" class="menu-icon" onclick="openmenu()" alt="">
             </nav>
             <div class="header-text">
-                <h1><span>Markus</span> Hirsch</h1>
+                <h1>Markus Hirsch</h1>
                 <p>Interaction Developer</p>
             </div>
         </div>
@@ -34,7 +34,7 @@
         <div class="aboutcontainer">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/user.png" alt="">
+                    <img src="data/user.png" alt="">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
@@ -106,41 +106,69 @@
         <div class="portfoliocontainer">
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
-                <div class="work">
-                    <img src="images/work-1.png" alt="">
+                <a class="work" href="squatanalyzer.html">
+                    <img src="projects/squatanalyzer/thumbnail.jpg" alt="">
                     <div class="layer">
-                        <h2>Social Media App</h2>
-                        <p>Game</p>
+                        <h2>Squat Analyzer</h2>
+                        <p>Master Thesis</p>
                     </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-2.png" alt="">
+                </a>
+                <a class="work" href="turtlegame.html">
+                    <img src="projects/turtlegame/thumbnail.jpg" alt="">
                     <div class="layer">
-                        <h2>Music App</h2>
+                        <h2>Turtle Game</h2>
+                        <p>Physical Game</p>
+                    </div>
+                </a>
+                <a class="work" href="particleinstallation.html">
+                    <img src="projects/particleinstallation/thumbnail.JPG" alt="">
+                    <div class="layer">
+                        <h2>Particle Installation</h2>
                         <p>Interactive Installation</p>
                     </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.png" alt="">
+                </a>
+                <a class="work" href="flutter180.html">
+                    <img src="projects/flutter180/thumbnail.jpg" alt="">
                     <div class="layer">
-                        <h2>Online Shit</h2>
-                        <p>Prototyp</p>
+                        <h2>Flutter180</h2>
+                        <p>Mobile App</p>
                     </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.png" alt="">
+                </a>
+                <a class="work" href="playviz.html">
+                    <img src="projects/playviz/thumbnail.jpg" alt="">
                     <div class="layer">
-                        <h2>Online Shit</h2>
-                        <p>Prototyp</p>
+                        <h2>Play Viz</h2>
+                        <p>Scientific Prototyp</p>
                     </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.png" alt="">
+                </a>
+                <a class="work" href="appliedmagic.html">
+                    <img src="projects/appliedmagic/thumbnail.jpg" alt="">
                     <div class="layer">
-                        <h2>Online Shit</h2>
-                        <p>Prototyp</p>
+                        <h2>Applied Magic</h2>
+                        <p>Interactive Installation</p>
                     </div>
-                </div>
+                </a>
+                <a class="work" href="mediawall.html">
+                    <img src="projects/mediawall/thumbnail.jpg" alt="">
+                    <div class="layer">
+                        <h2>Media Wall</h2>
+                        <p>Interactive Installation</p>
+                    </div>
+                </a>
+                <a class="work" href="weihnachtspost.html">
+                    <img src="projects/weihnachtspost/thumbnail.jpg" alt="">
+                    <div class="layer">
+                        <h2>Christmas Post</h2>
+                        <p>Generative Art</p>
+                    </div>
+                </a>
+                <a class="work" href="synesthesia.html">
+                    <img src="projects/synesthesia/thumbnail.jpg" alt="">
+                    <div class="layer">
+                        <h2>Synesthesia</h2>
+                        <p>Interactive Installation</p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
@@ -156,7 +184,7 @@
                         </div>
                         <p id="emailtext">contact@example.com</p>
                     </div> 
-                    <a href="images/my-cv.pdf" download class="btn">Download CV</a>
+                    <a href="data/my-cv.pdf" download class="btn">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form>

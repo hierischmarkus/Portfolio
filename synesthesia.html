@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projectstyle.css">
+</head>
+<body>
+    <div class="header" style="background-image: url(projects/synesthesia/vorschau.jpg);">
+        <div class="container">
+            <nav>
+                <a class="logo" href="index.html#header"><span>MH</span>Dev</a>
+                <ul id = "sidemenu">
+                    <li><a href="index.html#header">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#Portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <img src="svg/close.svg" class="menu-icon" onclick="closemenu()" alt=""/>
+                </ul>
+                <img src="svg/menu.svg" class="menu-icon" onclick="openmenu()" alt="">
+            </nav>
+        </div>
+    </div>
+    <div id = "project">
+        <div class="project-container">
+            <h1 class="sub-title">Synesthesia</h1>
+            <div class="project-content">
+                <div class="project-row1">
+                    <ul>
+                        <li><span>Institution</span><br>Media University Stuttgart</li>
+                        <li><span>Year</span><br>2018</li>
+                        <li><span>Type</span><br>Interactive Installation<br></li>
+                        <li><span>Software</span><br>VVVV</li>
+                        <li><span>My Part</span><br>Concept<br>Media Technology Planing<br>Physical Prototyping<br>Implementation</li>
+                    </ul>
+                </div>
+                <div class="project-row2">
+                    <div class="project-row2-container">
+                        </div>
+                        <video controls id="video" poster="projects/synesthesia/poster.jpg">
+                            <source src="projects/synesthesia/video.mp4" type="video/mp4">
+                        </video>
+                        <p>This project is an interactive experience room which deals with 
+                            Synesthesia. Synesthesia is a perceptual phenomenon in which certain 
+                            imposes automatically and involuntarily trigger a second unrelated 
+                            sensory impression. It is awarded with renowned national and international 
+                            prizes and is the most successful installation of 
+                            the course “Event Media” ever. 
+                            <br><br>
+                            The installation boasted several key elements, including a pressure-sensitive 
+                            LED panel on the ground, 2000 LED balls that formed three of the four walls, 
+                            and the central control unit known as the "Synesthesizer."
+                            <br><br>
+                            The elements are playing role in representing different forms of synesthesia. 
+                            The first form explored the correlation between shape and color. By stepping on specific 
+                            shapes on the LED panels, they would move outward and transform into vibrant colors 
+                            when reaching the walls. The second form depicted the correlation between 
+                            sound and hand movements. By moving their hands over designated areas, visitors would 
+                            trigger sound effects similar to playing a piano. In addition those movements creating
+                            colorful patterns on the walls.
+                            <br><br>
+                            Within our group of eight individuals, I actively participated in the planning and design 
+                            phases. However, my main focus revolved around directing the programming and media control 
+                            aspects of the project. I was responsible for the development, design, and implementation of 
+                            the Synesthesizer, a process that involved intensive physical prototyping using various hand 
+                            tracking sensors. Additionally, I ensured a seamless interaction between the sensors, sound 
+                            effects, and color transformations.
+                            </p>
+                        <div class="project-slideshow">
+                            <img class="slide fade" src="projects/synesthesia/1.jpg" alt="" style="width: 100%;">
+                            <img class="slide fade" src="projects/synesthesia/2.jpg" alt="" style="width: 100%;">
+                            <img src="svg/chevron-left.svg"  onclick="plusSlides(-1)" class="slide-button left" alt="">
+                            <img src="svg/chevron-right.svg" onclick="plusSlides(1)" class="slide-button right" alt="">
+                            <div class="dot-container">
+                                <span class="dot" onclick="showspecificSlide(1)"></span> 
+                                <span class="dot" onclick="showspecificSlide(2)"></span> 
+                            </div>  
+                        </div>
+                        <div class="change-project-wrapper">
+                            <a class="change-project" href="weihnachtspost.html">
+                                <div class="change-project-container last">
+                                    <img src="svg/chevron-left.svg" class="change-project-button" alt="">
+                                </div>
+                                <p>Last Project</p>
+                            </a> 
+                            <a class="change-project" href="squatanalyzer.html">
+                                <p>Next Project</p>
+                                <div class="change-project-container next">
+                                    <img src="svg/chevron-right.svg" class="change-project-button" alt="">
+                                </div>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------contact-------------->
+        <div id="contact">
+            <div class="contactcontainer">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <div class="email">
+                            <img src="svg/email.svg" class="email-icon" alt="">
+                            <p id="emailtext">contact@example.com</p>
+                        </div> 
+                        <a href="projects/my-cv.pdf" download class="btn">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type ="submit" class="btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+    <script src="slideshow.js"></script>
+    <script src="changetabs.js"></script>
+
+</body>
+</html>

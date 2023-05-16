@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projectstyle.css">
+</head>
+<body>
+    <div class="header" style="background-image: url(projects/mediawall/vorschau.jpg);">
+        <div class="container">
+            <nav>
+                <a class="logo" href="index.html#header"><span>MH</span>Dev</a>
+                <ul id = "sidemenu">
+                    <li><a href="index.html#header">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#Portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <img src="svg/close.svg" class="menu-icon" onclick="closemenu()" alt=""/>
+                </ul>
+                <img src="svg/menu.svg" class="menu-icon" onclick="openmenu()" alt="">
+            </nav>
+        </div>
+    </div>
+    <div id = "project">
+        <div class="project-container">
+            <h1 class="sub-title">Mediawall</h1>
+            <div class="project-content">
+                <div class="project-row1">
+                    <ul>
+                        <li><span>Institution</span><br>17K GmbH</li>
+                        <li><span>Year</span><br>2018</li>
+                        <li><span>Type</span><br>Interactive Installation<br></li>
+                        <li><span>Software</span><br>VVVV</li>
+                        <li><span>My Part</span><br>Implementation</li>
+                    </ul>
+                </div>
+                <div class="project-row2">
+                    <div class="project-row2-container">
+                        </div>
+                        <video controls id="video" poster="projects/mediawall/poster.jpg">
+                            <source src="projects/mediawall/video.mp4" type="video/mp4">
+                        </video>
+                        <p>For the BAUMA 2018 in Shanghai and the BAUMA 2019 in Munich my company 17K 
+                            implemented several interactive exhibits for the tunnel boring 
+                            company Herrenknecht AG. 
+                            <br><br>
+                            One of my key responsibilities during this period was the development 
+                            of the interactive application known as "Mediawall." This dynamic 
+                            application served as a comprehensive showcase of Herrenknecht AG's 
+                            complete product portfolio. In China, it featured four Full HD touch 
+                            screens, while in Munich, it boasted four 4K touch screens.
+                            <br><br>
+                            The Mediawall offered users the ability to explore detailed 
+                            information about each product by simply clicking on it, 
+                            which redirected them to the corresponding webpage on Herrenknecht AG's 
+                            official website. To ensure an engaging experience, the application 
+                            incorporated a screensaver that would activate when the user 
+                            remained inactive for a certain period, inviting them to further 
+                            explore the range of products.
+                            <br><br>
+                            Despite being an intern and working student, I was given a high 
+                            responsibility for the implementation of the Mediawall, 
+                            handling the majority of the implementation process. My role included 
+                            the creation of a downloader tool responsible for retrieving all 
+                            media data from a database, which was based on the Herrenknecht AG 
+                            website. Additionally, I developed an application that filtered and 
+                            organized the information from this database, presenting 
+                            downloaded images alongside their related texts in a sorted grid layout. 
+                            Furthermore, I successfully implemented the screen designs provided by 
+                            a design agency.
+                            </p>
+                        <div class="project-slideshow">
+                            <img class="slide fade" src="projects/mediawall/1.jpg" alt="" style="width: 100%;">
+                            <img class="slide fade" src="projects/mediawall/2.jpg" alt="" style="width: 100%;">
+                            <img class="slide fade" src="projects/mediawall/3.jpg" alt="" style="width: 100%;">
+                            <img src="svg/chevron-left.svg"  onclick="plusSlides(-1)" class="slide-button left" alt="">
+                            <img src="svg/chevron-right.svg" onclick="plusSlides(1)" class="slide-button right" alt="">
+                            <div class="dot-container">
+                                <span class="dot" onclick="showspecificSlide(1)"></span> 
+                                <span class="dot" onclick="showspecificSlide(2)"></span> 
+                                <span class="dot" onclick="showspecificSlide(3)"></span>
+                            </div>  
+                        </div>
+                        <div class="change-project-wrapper">
+                            <a class="change-project" href="appliedmagic.html">
+                                <div class="change-project-container last">
+                                    <img src="svg/chevron-left.svg" class="change-project-button" alt="">
+                                </div>
+                                <p>Last Project</p>
+                            </a> 
+                            <a class="change-project" href="weihnachtspost.html">
+                                <p>Next Project</p>
+                                <div class="change-project-container next">
+                                    <img src="svg/chevron-right.svg" class="change-project-button" alt="">
+                                </div>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------contact-------------->
+        <div id="contact">
+            <div class="contactcontainer">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <div class="email">
+                            <img src="svg/email.svg" class="email-icon" alt="">
+                            <p id="emailtext">contact@example.com</p>
+                        </div> 
+                        <a href="projects/my-cv.pdf" download class="btn">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type ="submit" class="btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+    <script src="slideshow.js"></script>
+    <script src="changetabs.js"></script>
+
+</body>
+</html>
