@@ -13,7 +13,7 @@ html{
 body {
     background-color: white;
     color: black;
-    font-size: 1.125rem;
+    font-size: 18px;
     animation: fadeInAnimation ease 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -56,13 +56,13 @@ nav{
 .logo{
     color: #fff;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
     cursor: pointer;
 }
 
 .logo span{
-    color: rgba(97,176,183,1)
+    color: rgba(114,164,191,1)
 }
 
 
@@ -82,7 +82,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #61B0B7;
+    background: rgba(114,164,191,0.8);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -95,21 +95,22 @@ nav ul li a:hover::after{
 
 .header-text{
     margin-top: 70vh;
-    font-size: 30px;
+    font-size: 26px;
 }
 
 .header-text h1{
     color: white;
-    font-size: 60px;
+    font-size: 54px;
     margin-top: 20px;
+    font-weight: 400;
 }
 
 .header-text h1 span{
-    color:#61B0B7;
+    color: rgba(114,164,191,0.8);
 }
 
 .header-text p{
-    color: white;
+    color: rgba(114,164,191,1);
 }
 
 
@@ -117,7 +118,8 @@ nav ul li a:hover::after{
 
 
 #about{
-    padding: 80px 0;
+    padding-top: 40px;
+    padding-bottom: 80px;
     color: black;
 }
 
@@ -132,7 +134,7 @@ nav ul li a:hover::after{
 }
 
 .about-col-1{
-    flex-basis: 46%;
+    flex-basis: 48%;
 }
 
 .about-col-1 img{
@@ -146,7 +148,7 @@ nav ul li a:hover::after{
 
 .sub-title{
     font-size: 60px;
-    font-weight: 600;
+    font-weight: 500;
     color: black;
     margin-bottom: 10px;
 }
@@ -174,7 +176,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #61B0B7;
+    background: rgba(114,164,191,1);
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -187,13 +189,45 @@ nav ul li a:hover::after{
 
 .tab-contents ul li{
     list-style: none;
-    margin: 10px 0;
+    margin: 13px 0;
 }
 
-.tab-contents ul li span{
-    color:rgba(97,176,183,0.8);
+.tab-contents ul li span.date{
+    color:rgba(114,164,191,0.8);
     font-size: 16px;
 }
+
+.tab-contents ul li span.headline{
+    font-weight: 600;
+}
+
+.tab-contents ul li span.break-headline{
+    display: block;
+    margin-top: 4px;
+}
+
+.tab-contents ul li span.break-text{
+    display: block;
+    margin-top: 3px;
+}
+
+.tab-contents ul li span.break-points{
+    display: block;
+    margin-top: 2px;
+}
+
+.tab-contents ul li span.headline-texts{
+    display: block;
+    margin-top: 1px;
+}
+
+.tab-contents ul li span.list-circle{
+    vertical-align: middle;
+    font-size: 9px;
+}
+
+
+
 
 .tab-contents{
     display: none;
@@ -213,12 +247,12 @@ nav ul li a:hover::after{
     color: white; /* White text color */
     margin-bottom: 10px;
     margin-top: 2px;
-    background-color: rgba(97,176,183,0.8);
+    background-color: rgba(114,164,191,0.8);
     border-radius: 3px;
   }
   
-  .vvvv {width: 75%;} 
-  .unity {width: 60%;} 
+  .vvvv {width: 73%;} 
+  .unity {width: 65%;} 
   .arduino {width: 55%;} 
   .python {width: 50%;} 
   .adobe {width: 40%;}
@@ -274,7 +308,7 @@ nav ul li a:hover::after{
 }
 
 .layer h2{
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 2px;
 }
 
@@ -283,7 +317,7 @@ nav ul li a:hover::after{
 }
 
 .work:hover .layer{
-    background: rgba(97,176,183,0.8);
+    background: rgba(114,164,191,0.8);
     color:white;
 }
 
@@ -318,6 +352,7 @@ nav ul li a:hover::after{
 
 .email {
     padding-top: 2px;
+    margin-bottom: 35px;
     display: flex;
 }
 
@@ -412,7 +447,8 @@ form .btn{
         font-size: 19px;
     }
 
-    .tab-contents ul li span{
+
+    .tab-contents ul li span.date{
         font-size: 15px;
     }
 
@@ -423,7 +459,7 @@ form .btn{
 @media only screen and (max-width: 900px) and (min-width: 600px)  {
 
     body{
-        font-size: 16px;
+        font-size: 17px;
     }
 
     #main-header{
@@ -474,8 +510,9 @@ form .btn{
     }
 
 
-    .tab-contents ul li span{
-        font-size: 14px;
+
+    .tab-contents ul li span.date{
+        font-size: 14x;
     }
 
     .about-col-1 img{
@@ -571,7 +608,7 @@ form .btn{
 
     
     nav ul{
-        background: rgba(97,176,183,1);
+        background: rgba(114,164,191,1);
         position: fixed;
         top: 0;
         right: -200px;
@@ -611,7 +648,8 @@ form .btn{
         width: 100%;
     }
 
-    .tab-contents ul li span{
+
+    .tab-contents ul li span.date{
         font-size: 13px;
     }
 

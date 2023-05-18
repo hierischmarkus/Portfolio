@@ -102,14 +102,14 @@ video::-webkit-media-controls-enclosure {
     cursor: pointer;
     height: 12px;
     width: 12px;
-    background-color: rgba(97,176,183,0.6);
+    background-color: rgba(114,164,191,0.6);
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
   }
 
   .active, .dot:hover {
-    background-color: rgba(97,176,183,1.0);
+    background-color: rgba(114,164,191,1.0);
   }
 
 
@@ -126,7 +126,7 @@ video::-webkit-media-controls-enclosure {
 }
 
 .project-content ul li span{
-    color:rgba(97,176,183,0.8);
+    color:rgba(114,164,191,0.8);
     font-size: 16px;
 }
 
