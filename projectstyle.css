@@ -219,6 +219,10 @@ video::-webkit-media-controls-enclosure {
         margin: 0 4px;
     }
 
+    .project-container{
+        padding: 10px 5%;
+    }
+
     .change-project-button{
         height: 14px;
         width: 14px;
