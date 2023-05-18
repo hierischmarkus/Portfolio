@@ -1,7 +1,7 @@
     
     var path = window.location.pathname;
     var projectName = path.split("/").pop().split(".").shift();
-    locationName = "url(./projects/" + projectName + "/";
+    locationName = "url(projects/" + projectName + "/";
     phone = locationName + "vorschau-phone.jpg)";
     tablet = locationName + "vorschau-tablet.jpg)";
     standard = locationName + "vorschau.jpg)";
