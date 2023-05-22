@@ -131,6 +131,7 @@ nav ul li a:hover::after{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .about-col-1{
@@ -144,6 +145,7 @@ nav ul li a:hover::after{
 
 .about-col-2{
     flex-basis: 38%;
+    height: 50%;
 }
 
 .sub-title{
