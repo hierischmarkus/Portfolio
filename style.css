@@ -131,7 +131,6 @@ nav ul li a:hover::after{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    align-items: center;
 }
 
 .about-col-1{
