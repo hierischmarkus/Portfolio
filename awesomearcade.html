@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahü</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projectstyle.css">
+    <link rel="icon" href="svg/Logo.svg">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <nav>
+                <a class="logo" href="index.html#header"><span>MH</span>Dev</a>
+                <ul id = "sidemenu">
+                    <li><a href="index.html#header">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#Portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <img src="svg/close.svg" class="menu-icon" onclick="closemenu()" alt=""/>
+                </ul>
+                <img src="svg/menu.svg" class="menu-icon" onclick="openmenu()" alt="">
+            </nav>
+        </div>
+    </div>
+    <div id = "project">
+        <div class="project-container">
+            <h1 class="sub-title">Awesome Arcade</h1>
+            <div class="project-content">
+                <div class="project-row1">
+                    <ul>
+                        <li><span>Institution</span><br>Responsive Spaces</li>
+                        <li><span>Year</span><br>2021</li>
+                        <li><span>Type</span><br>Interactive Exponat<br></li>
+                        <li><span>Software</span><br>VVVV</li>
+                        <li><span>My Part</span><br>Implementation<br>Physical Prototyping</li>
+                    </ul>
+                </div>
+                <div class="project-row2">
+                    <div class="project-row2-container">
+                        </div>
+                        <video controls id="video" poster="projects/mediawall/poster.jpg">
+                            <source src="projects/mediawall/video.mp4" type="video/mp4">
+                        </video>
+                        <p>A few years before, my boss acquired an old broken arcade machine during a store 
+                            liquidation, and I was entrusted with the exciting task of bringing 
+                            it back to life. The primary objective was not only to restore its 
+                            gaming functionality but also to transform it into a 
+                            captivating tool for marketing, self-presentation, 
+                            and showcasing company information.
+                            <br><br>
+                            The final implementation featured an integrated screen with a custom 
+                            application that showcased all the company's projects and 
+                            presented the individuals behind them. Utilizing the machine's original 
+                            arcade buttons for control added an authentic touch to the experience. 
+                            Additionally, we incorporated a game mode that allowed users to choose 
+                            from a variety of classic arcade games, successfully preserving the 
+                            machine's nostalgic gaming features.
+                            <br><br>
+                            To achieve this transformation, I spend considerable 
+                            time and in physical prototyping. I connected 
+                            all the buttons with an Arduino, ensuring reliable input recognition 
+                            and integrated a new screen to the machine. Furthermore I developed a 
+                            software solution that seamlessly processed the 
+                            data input from the Arduino. I established a connection 
+                            to the gaming emulator, and implementing an the desired user interface design. 
+                            <br><br>
+                            The end result was an immersive and visually appealing experience that 
+                            captivated users while effectively conveying the company's projects and information.
+                            </p>
+                        <div class="project-slideshow">
+                            <img class="slide fade" src="projects/mediawall/1.jpg" alt="" style="width: 100%;">
+                            <img class="slide fade" src="projects/mediawall/2.jpg" alt="" style="width: 100%;">
+                            <img class="slide fade" src="projects/mediawall/3.jpg" alt="" style="width: 100%;">
+                            <img src="svg/chevron-left.svg"  onclick="plusSlides(-1)" class="slide-button left" alt="">
+                            <img src="svg/chevron-right.svg" onclick="plusSlides(1)" class="slide-button right" alt="">
+                            <div class="dot-container">
+                                <span class="dot" onclick="showspecificSlide(1)"></span> 
+                                <span class="dot" onclick="showspecificSlide(2)"></span> 
+                                <span class="dot" onclick="showspecificSlide(3)"></span>
+                            </div>  
+                        </div>
+                        <div class="change-project-wrapper">
+                            <a class="change-project" href="appliedmagic.html">
+                                <div class="change-project-container last">
+                                    <img src="svg/chevron-left.svg" class="change-project-button" alt="">
+                                </div>
+                                <p>Last Project</p>
+                            </a> 
+                            <a class="change-project" href="weihnachtspost.html">
+                                <p>Next Project</p>
+                                <div class="change-project-container next">
+                                    <img src="svg/chevron-right.svg" class="change-project-button" alt="">
+                                </div>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------contact-------------->
+        <div id="contact">
+            <div class="contactcontainer">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <div class="email">
+                            <div class="email-icon-container">
+                                <img src="svg/email.svg" class="email-icon" alt="">
+                            </div>
+                            <p id="emailtext">markushirschdev@gmail.com</p>
+                        </div> 
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type ="submit" class="btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+    <script src="slideshow.js"></script>
+    <script src="changetabs.js"></script>
+    <script src="responsiveimage.js"></script>
+
+</body>
+</html>
