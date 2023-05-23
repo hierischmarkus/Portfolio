@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat';
+    font-family: 'SF Pro', 'Montserrat';
     box-sizing: border-box;
 }
 
@@ -27,11 +27,6 @@ body {
     }
 }
 
-@supports (-webkit-touch-callout: none) {
-    body {
-      font-family: 'SF Pro', 'Arial', sans-serif; /* Hier die alternative Schriftarten für Safari eintragen */
-    }
-  }
 
 
 .header{
