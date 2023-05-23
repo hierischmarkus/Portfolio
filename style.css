@@ -8,16 +8,24 @@
 
 /** Montserrat Medium **/
 @font-face {
-    font-family: "Montserrat";
+    font-family: "Montserrat-Light";
     font-weight: 300;
     font-style: normal;
     src: url(font/Montserrat-Light.woff2) format("woff2"),
          url(font/Montserrat-Light.woff) format("woff");
 }
 
+@font-face {
+    font-family: "Montserrat-Regular";
+    font-weight: 400;
+    font-style: normal;
+    src: url(font/Montserrat-Regular.woff2) format("woff2"),
+         url(font/Montserrat-Regular.woff) format("woff");
+}
+
 html{
     scroll-behavior: smooth;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat-Light';
     font-weight: 400;
 }
 
@@ -26,6 +34,7 @@ body {
     background-color: white;
     color: black;
     font-size: 18px;
+    font-weight: 400;
     animation: fadeInAnimation ease 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -37,6 +46,10 @@ body {
     100% {
         opacity: 1;
     }
+}
+
+p {
+    font-family: 'Montserrat-Regular';
 }
 
 
@@ -178,6 +191,7 @@ nav ul li a:hover::after{
 }
 
 .tab-links{
+    font-family: 'Montserrat-Light';  
     margin-right: 50px;
     font-weight: 600;
     cursor: pointer;
@@ -201,16 +215,19 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li{
+    font-family: 'Montserrat-Regular';  
     list-style: none;
     margin: 13px 0;
 }
 
 .tab-contents ul li span.date{
+    font-family: 'Montserrat-Regular';  
     color:rgba(114,164,191,0.8);
     font-size: 16px;
 }
 
 .tab-contents ul li span.headline{
+    font-family: 'Montserrat-Light';  
     font-weight: 600;
 }
 
