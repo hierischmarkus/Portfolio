@@ -205,17 +205,7 @@
 
     <script src="changetabs.js"></script>
 
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyA9jOslEn0UR2bn_aEhMIs9gHiJJ-f-hY8ogml_pXn_J9S6yB4tdFo2uznPQVEV63cdQ/exec'
-        const form = document.forms['submit-to-google-sheet']
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
-        })
-    </script>
+    <script src="contact-form-api"></script>
 
 
 </body>
