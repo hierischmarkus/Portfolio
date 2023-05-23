@@ -204,6 +204,13 @@
     </div>
 
     <script src="changetabs.js"></script>
+    <script>
+        var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+        if (isSafari) {
+            document.body.style.fontFamily = "'SF Pro', 'Arial', sans-serif";
+        }
+    </script>
 </body>
 
 </html>
