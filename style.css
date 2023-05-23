@@ -423,6 +423,7 @@ nav ul li a:hover::after{
 }
 
 form input, form textarea{
+    font-family: 'Montserrat-Regular';
     width: 100%;
     border: 0;
     outline: none;
@@ -435,6 +436,7 @@ form input, form textarea{
 }
 
 form .btn{
+    font-family: 'Montserrat-Regular';
     border: none;
     padding: 15px 60px;
     margin-top: 20px;
